@@ -17,4 +17,102 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--fonts), 'Arial', monospace;
+  font-variation-settings: var(--font-weight);
+  background-color: var(--backround);
+  background-image: var(--backround-image);
+  color: var(--accent-color);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--backround);
+  border: 2px solid var(--accent-color);
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 102px;
+}
+
+.header__title_indent {
+  margin-bottom: 20px;
+  margin-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);;
+}
+
+.header__title {
+  font-family: var(--fonts-accent);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: normal;
+}
+
+.header__title_si {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin-bottom: 23px;
+  text-transform: uppercase;
+}
+
+.theme-menu {
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.theme-menu__button {
+  position: relative;
+  font-family: var(--fonts-accent);
+  background: none;
+  border: none;
+  font-size: 14px;
+font-weight: normal;
+text-transform: uppercase;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  left: -13px;
+  top: 0;
+  animation: point infinite 0.5s ease-in-out alternate;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  animation: opas 0.3s ease forwards;
+}
+
+.theme-menu__button:hover {
+  animation: opas 0.3s ease forwards;
+}
+
+.theme-menu__button::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  outline: none;
+  background-color: var(--accent-color);
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: 0 100%;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: .6;
 }
