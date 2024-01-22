@@ -13,11 +13,11 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 @keyframes point {
-    0% {
+    from {
         translate: 0;
     }
 
-    100% {
+    to {
         translate: -4px;
     }
 }
@@ -27,3 +27,72 @@
         opacity: .6;
     }
 }
+
+ .core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon:hover .core {
+    fill: var(--accent-color);
+    transition: fill 0.3s linear;
+}
+
+.main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+}
+.like-icon:hover .main-body {
+    fill: var(--accent-color);
+    transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+    fill: var(--icon-bacground);
+    transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+    fill: var(--icon-bacground);
+    transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+    fill: var(--icon-bacground);
+    transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--icon-bacground);
+    transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+fill: var(--icon-bacground);
+transition: fill 0.3s 0.06s linear;
+}
+
+@keyframes scale {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.5;
+    }
+}
+
+@keyframes sparc {
+    from {
+        opacity: 0;
+    }
+   
+    to {
+        opacity: 100%;
+    }
+}
+
+.like-icon .contour {
+    fill: var(--accent-color);
+    transition: fill 0.1s linear;
+  }
