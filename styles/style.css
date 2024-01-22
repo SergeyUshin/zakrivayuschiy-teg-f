@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--fonts), "Arial", monospace;
-  font-variation-settings: var(--font-weight);
+  font-variation-settings: "wght" var(--font-weight);
   background-color: var(--backround);
   background-image: var(--backround-image);
   color: var(--accent-color);
