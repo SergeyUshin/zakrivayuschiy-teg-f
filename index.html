@@ -21,10 +21,10 @@
 
 <body class="page">
   <header class="header size">
-    <a href="#" class="logo__title logo__title_indent">
+    <a href="#" class="logo__title">
         &lt;/HTML&gt;
       </a>
-    <h1 class="header__title header__title_si">
+    <h1 class="header__title">
         закрывающий тег
       </h1>
     <nav class="theme-menu header__theme-menu">
@@ -98,7 +98,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_bl" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_blur" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/волнение&gt;
@@ -137,7 +137,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_gra" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_grayscale" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/страх&gt;
@@ -176,7 +176,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_sep" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_sepia" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/гордость&gt;
@@ -254,7 +254,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_cont" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_contrast" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/небольшая усталость&gt;
@@ -293,7 +293,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_sep-cont" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_sepia-contrast" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/усталость&gt;
@@ -332,7 +332,7 @@
           <div class="item__image">
             <picture>
               <source srcset="./images/1.webp" type="image/webp">
-              <img loading="lazy" class="size image image_bl-gra" src="./images/1.png" alt="мультяшный автобус">
+              <img loading="lazy" class="size image image_blur-grayscale" src="./images/1.png" alt="мультяшный автобус">
             </picture>
             <span class="image__text">
                 &lt;/в предвкушение js&gt;
@@ -366,9 +366,9 @@
         </li>
       </ul>
     </section>
-    <section class="seve">
-      <button type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" class="item__button-text button__seve">
-        <svg class="seve__icon" viewBox="0 0 21 21">
+    <section class="dialog">
+      <button type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" class="item__button-text button__dialog">
+        <svg class="dialog__icon" viewBox="0 0 21 21">
           <use href="./svg/diskket.svg#disket" class="disket">
           </use>
         </svg>
@@ -378,7 +378,7 @@
       </button>
     </section>
   </main>
-  <dialog class="seve__modal" id="dialog-id">
+  <dialog class="dialog__modal" id="dialog-id">
     <div class="modal__content">
       <svg class="modal__icon" viewBox="0 0 21 21">
         <use href="./svg/diskket.svg#disket" class="modal__disket">
@@ -390,7 +390,7 @@
     </div>
     <form method="dialog">
       <button type="submit" class="item__button-text item__button-text_size" onclick="window['dialog-id'].close()">
-        <span class="button__text seve__text">
+        <span class="button__text dialog__text">
           ok
         </span>
       </button>
